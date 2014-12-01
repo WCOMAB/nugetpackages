@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Do not remove this test for UTF-8: if ??? doesn?t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
     <id>sqlbulksync</id>
     <title>WCOM Sql Bulk Sync</title>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>WCOM AB</authors>
     <owners>WCOM AB</owners>
     <summary>WCOM SQL Bulk Sync is a lightweight, performant non-intrusive SQL Server data sync tool.</summary>
@@ -14,12 +14,15 @@
     The tool was developed primary for syncing on premise SQL server data to Azure in an efficient way, where only the changes are transferred.
     But it will also work just fine between non cloud instances.</description>
     <projectUrl>https://github.com/WCOMAB/SqlBulkSync</projectUrl>
-    <tags>sqlbulksync</tags>
+    <tags>sql bulk sync sqlserver mssql data</tags>
     <copyright>WCOM AB 2014</copyright>
     <licenseUrl>https://github.com/WCOMAB/SqlBulkSync/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://cdn.rawgit.com/WCOMAB/nugetpackages/master/Chocolatey/icons/wcom.png</iconUrl>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+        * 1.0.2   - Lowered .Net requirement from 4.5.2 to 4.0
+        * 1.0.1   - Initial release
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
